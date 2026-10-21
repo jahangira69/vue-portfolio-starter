@@ -1,0 +1,118 @@
+[
+  {
+    "id": "atlas",
+    "name": "Atlas",
+    "eyebrow": "Clarity for everyday work.",
+    "category": "Web apps",
+    "year": "CONCEPT 01",
+    "kind": "atlas",
+    "description": "A calmer workspace for teams to plan, focus, and move good ideas forward.",
+    "tags": [
+      "Vue 3",
+      "TypeScript",
+      "Product UI"
+    ],
+    "role": "Interface & application concept",
+    "duration": "Illustrative case study",
+    "featured": true,
+    "challenge": "Team tools often scatter attention across competing panels and disconnected workflows. This concept explores how a shared workspace can make priorities easier to understand.",
+    "approach": "A restrained dashboard brings projects, activity, and weekly priorities into one view. Reusable interface patterns keep navigation predictable and make the layout work from a phone to a wide display.",
+    "outcome": "The design demonstrates a clear information hierarchy, flexible project cards, and a focused workspace. It is an illustrative portfolio concept, not a shipped client product or a measured business result.",
+    "highlights": [
+      "Responsive workspace layout",
+      "Reusable interface patterns",
+      "Clear project and activity hierarchy"
+    ],
+    "liveUrl": "",
+    "sourceUrl": "",
+    "image": "",
+    "imageAlt": ""
+  },
+  {
+    "id": "forma",
+    "name": "Forma",
+    "eyebrow": "Objects with intention.",
+    "category": "Websites",
+    "year": "CONCEPT 02",
+    "kind": "forma",
+    "description": "An editorial storefront where thoughtful products have room to tell their story.",
+    "tags": [
+      "Nuxt",
+      "Commerce UI",
+      "Motion"
+    ],
+    "role": "Website & interaction concept",
+    "duration": "Illustrative case study",
+    "featured": true,
+    "challenge": "A design-led storefront needs to communicate material, character, and usefulness without making the shopping experience feel complicated.",
+    "approach": "Oversized typography, quiet spacing, and a warm material palette give each product a clear place in the story. The concept uses a consistent visual rhythm and deliberately simple navigation.",
+    "outcome": "A visual storefront concept with adaptable product presentation and a considered mobile composition. Checkout, inventory, and commercial results are outside this illustrative concept.",
+    "highlights": [
+      "Editorial product storytelling",
+      "Mobile-first composition",
+      "Considered interaction states"
+    ],
+    "liveUrl": "",
+    "sourceUrl": "",
+    "image": "",
+    "imageAlt": ""
+  },
+  {
+    "id": "pulse",
+    "name": "Pulse",
+    "eyebrow": "Less noise. More insight.",
+    "category": "Web apps",
+    "year": "CONCEPT 03",
+    "kind": "pulse",
+    "description": "A focused analytics experience that makes complex information feel approachable.",
+    "tags": [
+      "Vue 3",
+      "Data UI",
+      "Accessibility"
+    ],
+    "role": "Dashboard & visualization concept",
+    "duration": "Illustrative case study",
+    "featured": true,
+    "challenge": "Analytics interfaces can overwhelm visitors with numbers before explaining what deserves attention. This concept starts with legibility and a clear visual hierarchy.",
+    "approach": "A lavender accent, concise summary cards, and comparative charts create a quiet rhythm. Status labels complement color, and information is grouped around the questions someone would ask first.",
+    "outcome": "A responsive dashboard study showing how data can be presented with less friction. All chart values are sample interface data; no performance or client outcomes are claimed.",
+    "highlights": [
+      "Readable data hierarchy",
+      "Responsive chart presentation",
+      "Labels beyond color alone"
+    ],
+    "liveUrl": "",
+    "sourceUrl": "",
+    "image": "",
+    "imageAlt": ""
+  },
+  {
+    "id": "relay",
+    "name": "Relay",
+    "eyebrow": "Connect the possibilities.",
+    "category": "Developer tools",
+    "year": "CONCEPT 04",
+    "kind": "relay",
+    "description": "A developer-first API console designed to make the technical feel intuitive.",
+    "tags": [
+      "TypeScript",
+      "API design",
+      "Developer UX"
+    ],
+    "role": "Developer experience concept",
+    "duration": "Illustrative case study",
+    "featured": true,
+    "challenge": "API documentation and request tools can feel disconnected. Relay explores a single place to understand a request, inspect its response, and find the next useful action.",
+    "approach": "A dark console pairs readable code with straightforward connection states. Familiar developer patterns reduce visual friction while a structured layout leaves room for growth.",
+    "outcome": "A developer-tool interface study with request and response previews. It is a UI concept and does not represent an operating API platform.",
+    "highlights": [
+      "Readable request and response UI",
+      "Clear connection states",
+      "Consistent developer patterns"
+    ],
+    "liveUrl": "",
+    "sourceUrl": "",
+    "image": "",
+    "imageAlt": ""
+  }
+]

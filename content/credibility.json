@@ -1,0 +1,38 @@
+{
+  "focus": [
+    { "name": "Frontend development", "label": "Interface", "width": "95%" },
+    { "name": "Backend & APIs", "label": "Systems", "width": "89%" },
+    { "name": "DevOps & cloud", "label": "Delivery", "width": "82%" },
+    { "name": "Mobile experiences", "label": "Mobile", "width": "76%" },
+    { "name": "UI, UX & motion", "label": "Interaction", "width": "91%" }
+  ],
+  "introduction": "I like software that works beautifully on both sides of the screen. A clear interface should be supported by equally thoughtful architecture, so the experience stays useful as it grows.",
+  "approach": "My approach is personal and collaborative: understand the problem, ask the right questions, and make deliberate decisions. From the first sketch to the final handoff, I keep the details connected to the bigger picture.",
+  "checklist": [
+    "Direct communication, from the first conversation",
+    "Maintainable code and considered architecture",
+    "Clear feedback and a shared understanding of scope",
+    "Full source code ownership at handoff",
+    "Thoughtful testing across the complete experience",
+    "Useful documentation for what comes next"
+  ],
+  "principles": [
+    { "title": "Direct communication", "description": "A clear conversation with the person doing the work.", "icon": "mail" },
+    { "title": "Thoughtful decisions", "description": "The right solution for the problem in front of us.", "icon": "spark" },
+    { "title": "Clear handoff", "description": "Code and context that make the next step easier.", "icon": "layers" },
+    { "title": "Source ownership", "description": "Your project, with the source and room to grow.", "icon": "code" }
+  ],
+  "reviewDisclosure": "Illustrative review layouts — replace with approved client feedback before launch.",
+  "testimonials": [
+    { "id": "review-01", "quote": "Clear updates, thoughtful questions, and a handoff I could understand. The little details made a difference.", "name": "Example client 01", "role": "Product collaboration", "initials": "01", "sample": true },
+    { "id": "review-02", "quote": "The process felt considered from the first conversation. Every decision came back to what the project needed.", "name": "Example client 02", "role": "Website project", "initials": "02", "sample": true },
+    { "id": "review-03", "quote": "A complex idea became an interface that felt simple. The collaboration was just as thoughtful as the design.", "name": "Example client 03", "role": "Interface design", "initials": "03", "sample": true },
+    { "id": "review-04", "quote": "I appreciated the care behind the work and the way technical choices were explained in plain language.", "name": "Example client 04", "role": "Technical collaboration", "initials": "04", "sample": true },
+    { "id": "review-05", "quote": "The project had a clear direction, useful check-ins, and space for feedback throughout the process.", "name": "Example client 05", "role": "Web application", "initials": "05", "sample": true },
+    { "id": "review-06", "quote": "Thoughtful interactions gave the experience character while keeping the important things easy to use.", "name": "Example client 06", "role": "Product experience", "initials": "06", "sample": true },
+    { "id": "review-07", "quote": "The handoff included the context I needed to keep moving. That made the next chapter feel much easier.", "name": "Example client 07", "role": "Project handoff", "initials": "07", "sample": true },
+    { "id": "review-08", "quote": "Questions were answered clearly, feedback was heard, and the details were handled with care.", "name": "Example client 08", "role": "Website collaboration", "initials": "08", "sample": true },
+    { "id": "review-09", "quote": "The work balanced the technical requirements with the people who would actually use the product.", "name": "Example client 09", "role": "Application experience", "initials": "09", "sample": true },
+    { "id": "review-10", "quote": "A considered approach, a clear process, and a result that gave the original idea room to grow.", "name": "Example client 10", "role": "Digital product", "initials": "10", "sample": true }
+  ]
+}

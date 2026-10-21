@@ -1,0 +1,44 @@
+[
+  {
+    "id": "frontend",
+    "label": "Frontend",
+    "icon": "layers",
+    "intro": "Interfaces that make the complex feel simple.",
+    "services": [
+      {"id":"react-next","title":"React & Next.js","icon":"code","description":"I shape component-based interfaces, from focused product pages to server-rendered web experiences.","tags":["React","Next.js","TypeScript"]},
+      {"id":"vue-nuxt","title":"Vue.js applications","icon":"layers","description":"I turn useful ideas into responsive Vue experiences with clear interactions and a considered Nuxt foundation.","tags":["Vue 3","Nuxt","Pinia"]},
+      {"id":"react-native","title":"React Native apps","icon":"globe","description":"I explore mobile experiences with shared patterns, native interactions, and thoughtful layouts for smaller screens.","tags":["React Native","Expo","iOS / Android"]},
+      {"id":"ui-motion","title":"UI, UX & motion","icon":"spark","description":"I bring interfaces to life with an intentional design system, meaningful transitions, and accessible interaction.","tags":["Interface design","Motion","Accessibility"]},
+      {"id":"angular","title":"Angular applications","icon":"code","description":"I organize complex screens around reusable patterns, typed data, and a structure that can grow with a product.","tags":["Angular","RxJS","TypeScript"]},
+      {"id":"performance","title":"Performance refinement","icon":"spark","description":"I look for the small bottlenecks that matter: loading, rendering, asset delivery, and how the experience feels.","tags":["Core Web Vitals","Vite","Asset strategy"]}
+    ]
+  },
+  {
+    "id": "backend",
+    "label": "Backend",
+    "icon": "code",
+    "intro": "A dependable foundation behind every interaction.",
+    "services": [
+      {"id":"node-apis","title":"Node.js & Express APIs","icon":"code","description":"I connect interfaces to structured APIs, with predictable responses and clear boundaries between services.","tags":["Node.js","Express","REST / GraphQL"]},
+      {"id":"laravel","title":"Laravel & PHP","icon":"layers","description":"I approach content systems, commerce features, and custom applications with a maintainable PHP foundation.","tags":["Laravel","PHP","MySQL"]},
+      {"id":"database","title":"Database architecture","icon":"layers","description":"I map the relationships behind a product and consider queries, migrations, and data integrity from the start.","tags":["PostgreSQL","MongoDB","Redis"]},
+      {"id":"python","title":"Python & Django","icon":"code","description":"I explore data-focused backend workflows and well-structured application services with the Python ecosystem.","tags":["Python","Django","FastAPI"]},
+      {"id":"realtime","title":"Real-time experiences","icon":"spark","description":"I connect live updates to the interface for conversations, activity views, and more collaborative experiences.","tags":["WebSocket","Socket.IO","Server-sent events"]},
+      {"id":"auth","title":"Authentication & access","icon":"check","description":"I consider sessions, permissions, and secure defaults as part of the product experience, not an afterthought.","tags":["OAuth","Sessions","Access control"]}
+    ]
+  },
+  {
+    "id": "devops",
+    "label": "Server & DevOps",
+    "icon": "globe",
+    "intro": "A clear path from the first commit to a considered launch.",
+    "services": [
+      {"id":"aws","title":"AWS cloud setup","icon":"globe","description":"I plan the infrastructure around the application’s needs, from hosting and storage to the way services connect.","tags":["AWS","S3","CloudFront"]},
+      {"id":"containers","title":"Docker & Kubernetes","icon":"layers","description":"I use repeatable environments and clear service boundaries to make application delivery easier to reason about.","tags":["Docker","Kubernetes","Containers"]},
+      {"id":"cicd","title":"CI / CD pipelines","icon":"code","description":"I build a repeatable release path with checks, version control, and deployment steps that are easy to follow.","tags":["GitHub Actions","Jenkins","Release workflows"]},
+      {"id":"monitoring","title":"Monitoring & observability","icon":"spark","description":"I connect useful logs and measurements so that problems can be understood with context when they appear.","tags":["Grafana","Prometheus","Application logs"]},
+      {"id":"hardening","title":"Security & hardening","icon":"check","description":"I review the basics that protect a deployment: configuration, encrypted connections, access, and updates.","tags":["Nginx","TLS","Cloudflare"]},
+      {"id":"backup","title":"Backup & recovery","icon":"layers","description":"I think through how an application can recover, with a documented backup strategy and practical restore steps.","tags":["Snapshots","Restore planning","Documentation"]}
+    ]
+  }
+]

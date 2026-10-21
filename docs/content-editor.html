@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Content studio · Jordan Shumate</title>
+<style>
+:root{font-family:Arial,Helvetica,sans-serif;color:#222722;background:#f5f4f0;font-synthesis:none;font-size:15px;--accent:#d94d31;--line:#dbdcd4;--muted:#666d63}*{box-sizing:border-box}body{margin:0}button,input,textarea,select{font:inherit}button,a,label,input,textarea,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.5}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #ed583a;outline-offset:4px}header{padding:34px max(5vw,24px) 28px;border-bottom:1px solid var(--line);background:#fcfbf8}header .topline{display:flex;align-items:center;justify-content:space-between;gap:20px}.wordmark{font-weight:800;letter-spacing:-1px;font-size:23px}.wordmark span{color:var(--accent)}.pill{font-size:11px;letter-spacing:.13em;text-transform:uppercase;background:#eceee7;border-radius:30px;padding:9px 12px}h1{font-size:clamp(32px,4.5vw,58px);font-weight:500;letter-spacing:-.06em;line-height:1.06;margin:38px 0 13px}header p{color:var(--muted);max-width:750px;line-height:1.7;margin:0}main{padding:28px max(5vw,24px) 60px;max-width:1600px;margin:auto}.instructions{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:28px}.step{display:flex;gap:13px;color:var(--muted);line-height:1.55;font-size:13px}.step b{display:grid;place-items:center;background:#e9eae2;width:29px;height:29px;flex-shrink:0;border-radius:50%;color:#333}.step strong{color:#252b24;font-weight:600}code{background:#e8e9e2;padding:2px 5px;border-radius:3px;font-size:.95em}.toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 22px}.toolbar .spacer{flex:1}.btn{border:1px solid #cecec6;padding:12px 16px;border-radius:8px;background:transparent;color:#252b24;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:44px;line-height:1.2;transition:background .15s,transform .15s}.btn:hover{background:#e8e9e2}.btn.primary{background:#252b24;border-color:#252b24;color:#fff}.btn.primary:hover{background:#424a40}.btn.coral{background:var(--accent);border-color:var(--accent);color:white}.btn.coral:hover{background:#ba3b22}.btn.danger{color:#a12c23;border-color:#e2b9b0}.btn.small{padding:8px 11px;font-size:12px;min-height:36px}.upload{position:relative;overflow:hidden}.upload input{position:absolute;inset:0;opacity:0;width:100%;cursor:pointer}.layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:24px;align-items:start}.panel{border:1px solid var(--line);border-radius:14px;background:#fcfbf8;overflow:hidden}.panelhead{padding:24px 25px 21px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center}.panelhead h2{margin:0;font-size:22px;letter-spacing:-.04em;font-weight:500}.panelhead p{font-size:12px;line-height:1.5;color:var(--muted);margin:7px 0 0}.panelbody{padding:24px 25px}.field{display:flex;flex-direction:column;gap:7px;margin-bottom:17px;min-width:0}.field label{font-size:12px;font-weight:600;letter-spacing:.015em}.field input,.field textarea,.field select{background:#fff;border:1px solid #d4d7ce;border-radius:7px;padding:11px 12px;color:#252b24;width:100%;min-height:43px}.field textarea{resize:vertical;line-height:1.6}.field small{font-size:11px;color:var(--muted);line-height:1.5}.field input[type=checkbox]{width:18px;min-height:18px;accent-color:var(--accent)}.field.checkbox{display:flex;flex-direction:row;align-items:center;gap:10px}.field.checkbox label{order:1;line-height:1.5}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.field.wide{grid-column:1/-1}.subhead{font-size:11px;text-transform:uppercase;letter-spacing:.15em;margin:28px 0 18px;color:var(--muted);border-top:1px solid var(--line);padding-top:24px}.subhead:first-child{margin-top:0;border-top:0;padding-top:0}.note{font-size:12px;color:var(--muted);line-height:1.6;padding:14px 16px;background:#f0f0e9;border-radius:7px;margin:7px 0 20px}.project-list{display:grid;gap:8px;padding:18px 25px;border-bottom:1px solid var(--line);max-height:280px;overflow:auto}.project-row{display:flex;gap:8px}.project-select{flex:1;text-align:left;display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:7px;padding:12px 13px;background:#fff;color:#252b24}.project-select[aria-current=true]{border-color:var(--accent);box-shadow:inset 3px 0 var(--accent);background:#fcf2ed}.project-select span{font-size:12px;color:var(--muted);margin-left:12px}.empty{font-size:13px;color:var(--muted);line-height:1.7;padding:14px 0;margin:0}.form-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:20px}.dirty{font-size:11px;color:var(--accent)}#status{border:1px solid #cbd7c0;background:#f0f5eb;border-radius:8px;padding:14px 17px;color:#375129;font-size:13px;line-height:1.6;margin-bottom:22px;min-height:50px}#status.error{border-color:#e7b9ae;background:#fff0eb;color:#9a2f1b}footer{color:var(--muted);font-size:12px;line-height:1.8;margin-top:30px;max-width:820px}details{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}summary{font-size:13px;cursor:pointer}details p{font-size:12px;line-height:1.7;color:var(--muted)}.sr-only{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}@media(max-width:980px){.layout{grid-template-columns:1fr}.instructions{grid-template-columns:1fr}.step{font-size:13px}.toolbar .spacer{display:none}}@media(max-width:520px){header,main{padding-left:18px;padding-right:18px}.twocol{grid-template-columns:1fr}.panelhead,.panelbody{padding:20px}.project-list{padding:16px 20px}.toolbar .btn{flex:1 1 45%;font-size:12px}.pill{display:none}.project-select span{font-size:10px}h1{margin-top:28px}.form-actions .btn{flex:1}}
+</style>
+</head>
+<body>
+<header><div class="topline"><div class="wordmark">jordan<span>.</span> / content studio</div><span class="pill">Private, offline editing</span></div><h1>Good work deserves<br>a good place to live.</h1><p>Update your portfolio without editing code. Everything stays in this browser until you download your content files. This tool does not publish or change your website automatically.</p></header>
+<main>
+<div class="instructions"><div class="step"><b>1</b><div><strong>Import current content.</strong><br>Choose your latest <code>site.json</code> and <code>projects.json</code> from the project’s <code>content/</code> folder.</div></div><div class="step"><b>2</b><div><strong>Make it yours.</strong><br>Edit your profile, add projects, and save each project. Skills and career entries in an imported profile are preserved.</div></div><div class="step"><b>3</b><div><strong>Download & rebuild.</strong><br>Replace the matching files in <code>content/</code>, then run <code>npm run generate</code> or <code>npm run build</code>.</div></div></div>
+<div class="toolbar"><label class="btn upload">Import site.json<input id="import-site" type="file" accept=".json,application/json" aria-label="Import current site.json"></label><label class="btn upload">Import projects.json<input id="import-projects" type="file" accept=".json,application/json" aria-label="Import current projects.json"></label><span class="spacer"></span><button class="btn primary" id="export-site" type="button">Download site.json ↓</button><button class="btn primary" id="export-projects" type="button">Download projects.json ↓</button></div>
+<div id="status" role="status" aria-live="polite" aria-atomic="true">Ready. The bundled sample content is loaded. Import your current files before editing an existing website.</div>
+<div class="layout">
+<section class="panel" aria-labelledby="profile-heading"><div class="panelhead"><div><h2 id="profile-heading">Your profile</h2><p>Identity, links, and the words that introduce you.</p></div><span class="pill">01 / Profile</span></div><div class="panelbody"><form id="profile-form"><div id="profile-fields" class="twocol"></div></form><div class="note">For email mode, the form opens the visitor’s email app. For SMTP mode, deploy the Nuxt server and configure the SMTP values from <code>.env.example</code>. Static hosting does not run the included SMTP endpoint.</div><details><summary>About sample content & career details</summary><p>Leave “Show sample-content notice” on while the portfolio contains concept projects or illustrative skills and experience. Turn it off only after replacing those details with verified information. This editor preserves the <code>skills</code>, <code>experience</code>, and <code>principles</code> arrays from your imported profile; those can be edited directly in the JSON file.</p></details></div></section>
+<section class="panel" aria-labelledby="projects-heading"><div class="panelhead"><div><h2 id="projects-heading">Selected work <span id="project-count"></span></h2><p>Add a project, then tell the story behind it.</p></div><button class="btn coral small" id="add-project" type="button">+ New project</button></div><nav id="project-list" class="project-list" aria-label="Choose a project to edit"></nav><div class="panelbody"><div id="project-empty" class="empty" hidden>Select a project above, or add your first project.</div><form id="project-form"><div id="project-fields" class="twocol"></div><div class="form-actions"><span id="dirty-state" class="dirty" aria-live="polite"></span><div><button class="btn small danger" id="delete-project" type="button">Remove</button> <button class="btn primary small" type="submit">Save project ✓</button></div></div></form><button id="undo-delete" class="btn small" type="button" hidden style="margin-top:14px">Undo last removal</button></div></section>
+</div>
+<footer><strong>Additional sections:</strong> this editor manages profile and project JSON. Version 2 services, technologies, engineering focus, and review layouts are in <code>content/services.json</code>, <code>content/technologies.json</code>, and <code>content/credibility.json</code>. Edit those files in the source folder and rebuild. Confirm skills and replace every sample review before launch.<br><br><strong>A note on saving:</strong> changes are held in memory for this tab only. Download both JSON files before closing the editor. Browser downloads may add “(1)” if a file already exists; use the exact filenames <code>site.json</code> and <code>projects.json</code> in your source folder. Adding content does not require a CMS account or a paid service.</footer>
+</main>
+<script>
+'use strict';
+const DEFAULT_SITE = {"name": "Jordan Shumate", "initials": "JS", "role": "Independent software engineer", "location": "United States", "intro": "Thoughtful interfaces. Reliable engineering. Digital experiences that feel a little more human.", "about": "I’m Jordan, an independent software engineer based in the United States. This is a space for the things I build, the problems I explore, and the thinking behind the work.", "aboutSecondary": "I’m drawn to the intersection of useful technology and thoughtful design. From the first interaction to the last line of code, every detail has a job to do.", "email": "", "githubUrl": "", "linkedinUrl": "", "resumeUrl": "", "contactMode": "email", "contactEndpoint": "/api/contact", "demoContent": true, "skills": [{"label": "Interface engineering", "number": "01", "description": "Clear, accessible interfaces that feel natural on every screen.", "items": ["Vue.js", "Nuxt", "TypeScript", "JavaScript", "HTML & CSS"]}, {"label": "Systems & integration", "number": "02", "description": "Thoughtful architecture that connects the dots behind the experience.", "items": ["Node.js", "REST APIs", "PostgreSQL", "Data modeling", "Testing"]}, {"label": "Craft & delivery", "number": "03", "description": "Small details, considered interactions, and a dependable path to launch.", "items": ["Accessibility", "Performance", "Git", "Responsive design", "CI / CD"]}], "experience": [{"period": "CURRENT", "title": "Independent software engineer", "company": "Independent · United States", "description": "Building an independent practice around software engineering. Detailed responsibilities, dates, and delivered work will be added with Jordan’s verified career information.", "verified": true}, {"period": "YOUR JOURNEY", "title": "Experience worth sharing", "company": "Career details coming soon", "description": "A place for previous roles, meaningful collaborations, and the work behind them. This preview entry will be replaced with confirmed professional experience.", "verified": false}], "principles": ["Make it useful.", "Keep it clear.", "Care about the details."], "xUrl": ""};
+const DEFAULT_PROJECTS = [{"id": "atlas", "name": "Atlas", "eyebrow": "Clarity for everyday work.", "category": "Web apps", "year": "CONCEPT 01", "kind": "atlas", "description": "A calmer workspace for teams to plan, focus, and move good ideas forward.", "tags": ["Vue 3", "TypeScript", "Product UI"], "role": "Interface & application concept", "duration": "Illustrative case study", "featured": true, "challenge": "Team tools often scatter attention across competing panels and disconnected workflows. This concept explores how a shared workspace can make priorities easier to understand.", "approach": "A restrained dashboard brings projects, activity, and weekly priorities into one view. Reusable interface patterns keep navigation predictable and make the layout work from a phone to a wide display.", "outcome": "The design demonstrates a clear information hierarchy, flexible project cards, and a focused workspace. It is an illustrative portfolio concept, not a shipped client product or a measured business result.", "highlights": ["Responsive workspace layout", "Reusable interface patterns", "Clear project and activity hierarchy"], "liveUrl": "", "sourceUrl": "", "image": "", "imageAlt": ""}, {"id": "forma", "name": "Forma", "eyebrow": "Objects with intention.", "category": "Websites", "year": "CONCEPT 02", "kind": "forma", "description": "An editorial storefront where thoughtful products have room to tell their story.", "tags": ["Nuxt", "Commerce UI", "Motion"], "role": "Website & interaction concept", "duration": "Illustrative case study", "featured": true, "challenge": "A design-led storefront needs to communicate material, character, and usefulness without making the shopping experience feel complicated.", "approach": "Oversized typography, quiet spacing, and a warm material palette give each product a clear place in the story. The concept uses a consistent visual rhythm and deliberately simple navigation.", "outcome": "A visual storefront concept with adaptable product presentation and a considered mobile composition. Checkout, inventory, and commercial results are outside this illustrative concept.", "highlights": ["Editorial product storytelling", "Mobile-first composition", "Considered interaction states"], "liveUrl": "", "sourceUrl": "", "image": "", "imageAlt": ""}, {"id": "pulse", "name": "Pulse", "eyebrow": "Less noise. More insight.", "category": "Web apps", "year": "CONCEPT 03", "kind": "pulse", "description": "A focused analytics experience that makes complex information feel approachable.", "tags": ["Vue 3", "Data UI", "Accessibility"], "role": "Dashboard & visualization concept", "duration": "Illustrative case study", "featured": true, "challenge": "Analytics interfaces can overwhelm visitors with numbers before explaining what deserves attention. This concept starts with legibility and a clear visual hierarchy.", "approach": "A lavender accent, concise summary cards, and comparative charts create a quiet rhythm. Status labels complement color, and information is grouped around the questions someone would ask first.", "outcome": "A responsive dashboard study showing how data can be presented with less friction. All chart values are sample interface data; no performance or client outcomes are claimed.", "highlights": ["Readable data hierarchy", "Responsive chart presentation", "Labels beyond color alone"], "liveUrl": "", "sourceUrl": "", "image": "", "imageAlt": ""}, {"id": "relay", "name": "Relay", "eyebrow": "Connect the possibilities.", "category": "Developer tools", "year": "CONCEPT 04", "kind": "relay", "description": "A developer-first API console designed to make the technical feel intuitive.", "tags": ["TypeScript", "API design", "Developer UX"], "role": "Developer experience concept", "duration": "Illustrative case study", "featured": true, "challenge": "API documentation and request tools can feel disconnected. Relay explores a single place to understand a request, inspect its response, and find the next useful action.", "approach": "A dark console pairs readable code with straightforward connection states. Familiar developer patterns reduce visual friction while a structured layout leaves room for growth.", "outcome": "A developer-tool interface study with request and response previews. It is a UI concept and does not represent an operating API platform.", "highlights": ["Readable request and response UI", "Clear connection states", "Consistent developer patterns"], "liveUrl": "", "sourceUrl": "", "image": "", "imageAlt": ""}];
+let site = structuredClone(DEFAULT_SITE);
+let projects = structuredClone(DEFAULT_PROJECTS);
+let selectedIndex = projects.length ? 0 : -1;
+let projectDirty = false;
+let deletedProject = null;
+let siteDirty = false;
+let projectsDirty = false;
+const statusEl = document.getElementById('status');
+const profileForm = document.getElementById('profile-form');
+const projectForm = document.getElementById('project-form');
+const profileInputs = {};
+const projectInputs = {};
+const profileDefs = [
+ ['name','Full name','text',true], ['initials','Initials','text',true],
+ ['role','Professional role','text',true], ['location','Location','text',true],
+ ['intro','Hero introduction','textarea',false,'wide'],
+ ['about','About paragraph','textarea',false,'wide'],
+ ['aboutSecondary','Second about paragraph','textarea',false,'wide'],
+ ['email','Contact email','email',false,'wide'],
+ ['githubUrl','GitHub profile URL','url',false,'wide'],
+ ['linkedinUrl','LinkedIn profile URL','url',false,'wide'],
+ ['xUrl','X profile URL (optional)','url',false,'wide'],
+ ['resumeUrl','Resume URL or local path','text',false,'wide'],
+ ['contactMode','Contact form mode','select',true,'wide',[['email','Email app (static & offline)'],['smtp','SMTP backend (Nuxt server)']]],
+ ['contactEndpoint','Contact endpoint','text',true,'wide'],
+ ['demoContent','Show sample-content notice','checkbox',false,'wide']
+];
+const projectDefs = [
+ ['id','Project ID','text',true], ['name','Project name','text',true],
+ ['eyebrow','Short headline','text',true,'wide'],
+ ['category','Category','text',true],
+ ['kind','Artwork style','select',true,'', [['atlas','Atlas · olive workspace'],['forma','Forma · editorial shop'],['pulse','Pulse · lavender dashboard'],['relay','Relay · dark API console']]],
+ ['year','Year / concept label','text',true], ['role','Your role','text',true],
+ ['duration','Duration / case-study label','text',true,'wide'],
+ ['description','Project summary','textarea',true,'wide'],
+ ['tags','Technology tags, comma-separated','text',false,'wide'],
+ ['challenge','The challenge','textarea',true,'wide'],
+ ['approach','The approach','textarea',true,'wide'],
+ ['outcome','The outcome','textarea',true,'wide'],
+ ['highlights','Highlights, one per line','textarea',false,'wide'],
+ ['image','Project screenshot path / HTTPS URL (optional)','text',false,'wide'],
+ ['imageAlt','Screenshot description / alt text (optional)','text',false,'wide'],
+ ['liveUrl','Live website URL (optional)','url',false,'wide'],
+ ['sourceUrl','Source repository URL (optional)','url',false,'wide'],
+ ['featured','Featured project','checkbox',false,'wide']
+];
+function message(text,error=false){statusEl.textContent=text;statusEl.classList.toggle('error',error);}
+function makeFields(container,defs,map,prefix){
+ defs.forEach(([key,label,type,required,classes,options])=>{
+  const wrapper=document.createElement('div');wrapper.className='field'+(classes?' '+classes:'')+(type==='checkbox'?' checkbox':'');
+  const lab=document.createElement('label');lab.htmlFor=prefix+key;lab.textContent=label+(required?' *':'');
+  let input;
+  if(type==='textarea'){input=document.createElement('textarea');input.rows=['challenge','approach','outcome','about','aboutSecondary'].includes(key)?4:3;input.maxLength=12000;}
+  else if(type==='select'){input=document.createElement('select');options.forEach(([value,text])=>{const option=document.createElement('option');option.value=value;option.textContent=text;input.append(option);});}
+  else{input=document.createElement('input');input.type=type;input.maxLength=key==='email'?254:2000;}
+  input.id=prefix+key;input.name=key;input.required=!!required;
+  if(key==='id'){input.pattern='[a-z][a-z0-9]*(?:-[a-z0-9]+)*';input.maxLength=80;}
+  if(key==='email')input.autocomplete='email';
+  wrapper.append(lab,input);
+  const help={githubUrl:'Use Jordan’s actual public profile URL. Leave blank until it is confirmed.',linkedinUrl:'Use Jordan’s actual public profile URL. Leave blank until it is confirmed.',xUrl:'Optional: Jordan’s actual X profile URL. Blank icons remain visibly pending in the portfolio.',id:'Unique lowercase ID, for example: client-dashboard.',resumeUrl:'Use https://… or a local path such as /resume.pdf.',contactEndpoint:'Default: /api/contact. Only used in SMTP mode.',tags:'Example: Vue 3, Nuxt, TypeScript',highlights:'Keep each highlight short. One point per line.',image:'Copy screenshots into public/projects/, then use ./projects/name.webp. An https:// image URL is also supported. Leave empty to use the selected artwork style.',imageAlt:'Describe the screenshot for someone who cannot see it.'}[key];
+  if(help){const small=document.createElement('small');small.id=prefix+key+'-help';small.textContent=help;input.setAttribute('aria-describedby',small.id);wrapper.append(small);}
+  map[key]=input;container.append(wrapper);
+ });
+}
+makeFields(document.getElementById('profile-fields'),profileDefs,profileInputs,'site-');
+makeFields(document.getElementById('project-fields'),projectDefs,projectInputs,'project-');
+function loadProfile(){profileDefs.forEach(([key,,type])=>{if(type==='checkbox')profileInputs[key].checked=!!site[key];else profileInputs[key].value=site[key]??'';});}
+function setDirty(value){projectDirty=value;document.getElementById('dirty-state').textContent=value?'Unsaved project changes':'';}
+function readProfile(){
+ if(!profileForm.reportValidity())throw new Error('Please complete the required profile fields.');
+ const next={...site};profileDefs.forEach(([key,,type])=>{next[key]=type==='checkbox'?profileInputs[key].checked:profileInputs[key].value.trim();});validateSite(next);return next;
+}
+function validateText(value,label,max=12000,required=false){if(typeof value!=='string'||value.length>max||(required&&!value.trim()))throw new Error(label+' must be valid text'+(required?' and cannot be empty.':'.'));}
+function safeUrl(value,label,relative=false){
+ validateText(value,label,2000);if(!value)return;
+ if(/[\u0000-\u0020\u007f\\]/.test(value))throw new Error(label+' contains an invalid character.');
+ if(relative&&((value.startsWith('/')&&!value.startsWith('//'))||value.startsWith('./')||value.startsWith('../')))return;
+ let parsed;try{parsed=new URL(value);}catch{throw new Error(label+' must be a complete http or https URL'+(relative?' or a relative path.':'.'));}
+ if(!['http:','https:'].includes(parsed.protocol)||parsed.username||parsed.password)throw new Error(label+' must use http or https without credentials.');
+}
+function safeImageUrl(value,label){
+ validateText(value,label,2000);if(!value)return;
+ if(/[\u0000-\u0020\u007f\\]/.test(value))throw new Error(label+' contains an invalid character.');
+ if((value.startsWith('/')&&!value.startsWith('//'))||value.startsWith('./'))return;
+ let parsed;try{parsed=new URL(value);}catch{throw new Error(label+' must use https:// or a safe / or ./ asset path.');}
+ if(parsed.protocol!=='https:'||parsed.username||parsed.password)throw new Error(label+' must use https:// without credentials, or a safe / or ./ asset path.');
+}
+function validateSite(value){
+ if(!value||typeof value!=='object'||Array.isArray(value))throw new Error('site.json must contain one profile object.');
+ ['name','initials','role','location'].forEach(key=>validateText(value[key],key,300,true));
+ ['intro','about','aboutSecondary'].forEach(key=>validateText(value[key]??'',key));
+ validateText(value.email??'','Email',254);if(value.email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.email))throw new Error('Enter a valid contact email address.');
+ ['githubUrl','linkedinUrl','xUrl'].forEach(key=>safeUrl(value[key]??'',key));safeUrl(value.resumeUrl??'','Resume URL',true);
+ if(!['email','smtp'].includes(value.contactMode))throw new Error('Contact mode must be email or smtp.');safeUrl(value.contactEndpoint,'Contact endpoint',true);
+ if(typeof value.demoContent!=='boolean')throw new Error('demoContent must be true or false.');
+ for(const key of ['skills','experience','principles'])if(value[key]!==undefined&&!Array.isArray(value[key]))throw new Error(key+' must be an array.');
+ (value.skills||[]).forEach((skill,index)=>{if(!skill||typeof skill!=='object')throw new Error('Skill '+(index+1)+' must be an object.');for(const key of ['label','number','description'])validateText(skill[key],'Skill '+key,2000,true);if(!Array.isArray(skill.items))throw new Error('Skill items must be an array.');skill.items.forEach(item=>validateText(item,'Skill item',200,true));});
+ (value.experience||[]).forEach((entry,index)=>{if(!entry||typeof entry!=='object')throw new Error('Experience '+(index+1)+' must be an object.');for(const key of ['period','title','company','description'])validateText(entry[key],'Experience '+key,12000,true);if(typeof entry.verified!=='boolean')throw new Error('Experience verified must be true or false.');});
+ (value.principles||[]).forEach(item=>validateText(item,'Principle',1000,true));
+}
+function validateProjects(value){
+ if(!Array.isArray(value)||value.length>100)throw new Error('projects.json must contain an array of up to 100 projects.');
+ const ids=new Set();value.forEach((project,index)=>{
+  const at='Project '+(index+1)+': ';if(!project||typeof project!=='object'||Array.isArray(project))throw new Error(at+'expected an object.');
+  ['id','name','eyebrow','category','kind','year','role','duration','description','challenge','approach','outcome'].forEach(key=>validateText(project[key],at+key,key==='id'?80:12000,true));
+  if(!/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(project.id))throw new Error(at+'ID must use lowercase letters, numbers, and single hyphens.');
+  if(ids.has(project.id))throw new Error('Duplicate project ID: '+project.id);ids.add(project.id);
+  if(!['atlas','forma','pulse','relay'].includes(project.kind))throw new Error(at+'choose one of the four artwork styles.');
+  for(const key of ['tags','highlights']){if(!Array.isArray(project[key])||project[key].length>30)throw new Error(at+key+' must be an array of up to 30 strings.');project[key].forEach(item=>validateText(item,at+key,500,true));}
+  if(typeof project.featured!=='boolean')throw new Error(at+'featured must be true or false.');
+  safeUrl(project.liveUrl??'',at+'Live URL');safeUrl(project.sourceUrl??'',at+'Source URL');safeImageUrl(project.image??'',at+'Screenshot path');validateText(project.imageAlt??'',at+'Screenshot alt text',2000);
+ });
+}
+function loadProject(){
+ const project=projects[selectedIndex];projectForm.hidden=!project;document.getElementById('project-empty').hidden=!!project;
+ if(project)projectDefs.forEach(([key,,type])=>{if(type==='checkbox')projectInputs[key].checked=!!project[key];else if(key==='tags')projectInputs[key].value=(project[key]||[]).join(', ');else if(key==='highlights')projectInputs[key].value=(project[key]||[]).join('\n');else projectInputs[key].value=project[key]??'';});setDirty(false);
+}
+function renderList(){
+ const list=document.getElementById('project-list');list.replaceChildren();document.getElementById('project-count').textContent='('+projects.length+')';
+ if(!projects.length){const p=document.createElement('p');p.className='empty';p.textContent='No projects yet. Your next idea starts here.';list.append(p);}
+ projects.forEach((project,index)=>{const button=document.createElement('button');button.type='button';button.className='project-select';button.setAttribute('aria-current',String(index===selectedIndex));const title=document.createElement('strong');title.textContent=project.name;const label=document.createElement('span');label.textContent=project.category;button.append(title,label);button.addEventListener('click',()=>{if(projectDirty&&!confirm('Discard unsaved changes to this project?'))return;selectedIndex=index;loadProject();renderList();});list.append(button);});
+}
+function saveProject(){
+ if(!projectForm.reportValidity())return false;
+ try{
+  const next={...projects[selectedIndex]};projectDefs.forEach(([key,,type])=>{next[key]=type==='checkbox'?projectInputs[key].checked:projectInputs[key].value.trim();});
+  next.tags=projectInputs.tags.value.split(',').map(v=>v.trim()).filter(Boolean);next.highlights=projectInputs.highlights.value.split(/\r?\n/).map(v=>v.trim()).filter(Boolean);
+  const list=projects.map((item,index)=>index===selectedIndex?next:item);validateProjects(list);projects=list;projectsDirty=true;setDirty(false);renderList();message('Project saved in this tab. Download projects.json to keep your changes.');return true;
+ }catch(error){message(error.message,true);return false;}
+}
+projectForm.addEventListener('submit',event=>{event.preventDefault();saveProject();});projectForm.addEventListener('input',()=>setDirty(true));projectForm.addEventListener('change',()=>setDirty(true));
+profileForm.addEventListener('submit',event=>event.preventDefault());profileForm.addEventListener('input',()=>{siteDirty=true;});profileForm.addEventListener('change',()=>{siteDirty=true;});
+function uniqueId(){let id='new-project',n=2;while(projects.some(p=>p.id===id))id='new-project-'+n++;return id;}
+document.getElementById('add-project').addEventListener('click',()=>{
+ if(projectDirty&&!confirm('Discard unsaved changes to this project?'))return;
+ const id=uniqueId();projects.push({id,name:'New project',eyebrow:'A thoughtful new idea.',category:'Web apps',kind:'atlas',year:String(new Date().getFullYear()),description:'Describe what this project does and who it helps.',tags:[],role:'Your role',duration:'Project duration',challenge:'Describe the problem you set out to solve.',approach:'Explain your decisions and the work you did.',outcome:'Describe the result using verified information.',highlights:[],image:'',imageAlt:'',liveUrl:'',sourceUrl:'',featured:true});selectedIndex=projects.length-1;projectsDirty=true;renderList();loadProject();setDirty(true);projectInputs.name.focus();message('New project added. Edit its details, then choose Save project.');
+});
+document.getElementById('delete-project').addEventListener('click',()=>{
+ if(selectedIndex<0)return;deletedProject={project:projects[selectedIndex],index:selectedIndex};projects.splice(selectedIndex,1);projectsDirty=true;selectedIndex=projects.length?Math.min(selectedIndex,projects.length-1):-1;renderList();loadProject();document.getElementById('undo-delete').hidden=false;message('Project removed from this tab. You can undo this removal before closing the editor.');
+});
+document.getElementById('undo-delete').addEventListener('click',()=>{
+ if(!deletedProject)return;if(projectDirty&&!confirm('Discard unsaved changes to the current project?'))return;
+ if(projects.some(p=>p.id===deletedProject.project.id)){message('A project with this ID already exists. Change its ID before undoing.',true);return;}
+ selectedIndex=Math.min(deletedProject.index,projects.length);projects.splice(selectedIndex,0,deletedProject.project);projectsDirty=true;deletedProject=null;document.getElementById('undo-delete').hidden=true;renderList();loadProject();message('Project restored. Download projects.json to keep it.');
+});
+function download(filename,value){
+ const blob=new Blob([JSON.stringify(value,null,2)+'\n'],{type:'application/json'});const url=URL.createObjectURL(blob);const link=document.createElement('a');link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),2000);
+}
+document.getElementById('export-site').addEventListener('click',()=>{try{site=readProfile();download('site.json',site);siteDirty=false;message('site.json downloaded. Replace content/site.json in your source project, then rebuild.');}catch(error){message(error.message,true);}});
+document.getElementById('export-projects').addEventListener('click',()=>{try{if(projectDirty&&!saveProject())return;validateProjects(projects);download('projects.json',projects);projectsDirty=false;message('projects.json downloaded. Replace content/projects.json in your source project, then rebuild.');}catch(error){message(error.message,true);}});
+async function importFile(event,type){
+ const input=event.target,file=input.files[0];if(!file)return;
+ try{
+  if(file.size>1024*1024)throw new Error('Choose a JSON file smaller than 1 MB.');
+  const value=JSON.parse(await file.text());
+  if(type==='site'){
+   if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.name!=='string')throw new Error('site.json must be a profile object with a name.');const merged={...structuredClone(DEFAULT_SITE),...value};validateSite(merged);site=merged;siteDirty=false;loadProfile();message('Profile imported. Existing skills, career entries, and other profile properties are preserved.');
+  }else{
+   validateProjects(value);if(projectDirty&&!confirm('Replace the project list and discard unsaved project edits?'))return;projects=value;projectsDirty=false;selectedIndex=projects.length?0:-1;deletedProject=null;document.getElementById('undo-delete').hidden=true;renderList();loadProject();message(projects.length+' projects imported. Edit a project or add a new one.');
+  }
+ }catch(error){message('Could not import: '+error.message,true);}finally{input.value='';}
+}
+document.getElementById('import-site').addEventListener('change',event=>importFile(event,'site'));document.getElementById('import-projects').addEventListener('change',event=>importFile(event,'projects'));
+window.addEventListener('beforeunload',event=>{if(siteDirty||projectsDirty||projectDirty){event.preventDefault();event.returnValue='';}});
+loadProfile();renderList();loadProject();
+</script>
+</body></html>

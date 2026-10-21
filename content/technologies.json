@@ -1,0 +1,20 @@
+[
+  {"name":"React","mark":"react","color":"#429ab4","detail":"Component interfaces"},
+  {"name":"Vue.js","mark":"vue","color":"#4a9270","detail":"Reactive experiences"},
+  {"name":"Angular","mark":"angular","color":"#c95452","detail":"Application structure"},
+  {"name":"Node.js","mark":"node","color":"#668b4d","detail":"JavaScript services"},
+  {"name":"Python","mark":"python","color":"#537a9e","detail":"Data & application logic"},
+  {"name":"Laravel","mark":"laravel","color":"#d66a56","detail":"Thoughtful backend patterns"},
+  {"name":"Docker","mark":"docker","color":"#4b8eaf","detail":"Repeatable environments"},
+  {"name":"AWS","mark":"aws","color":"#bd8d4c","detail":"Cloud infrastructure"},
+  {"name":"PostgreSQL","mark":"postgres","color":"#597991","detail":"Relational data"},
+  {"name":"MongoDB","mark":"mongo","color":"#6e8d56","detail":"Flexible data models"},
+  {"name":"Git","mark":"git","color":"#d06a4d","detail":"Versioned collaboration"},
+  {"name":"Linux","mark":"linux","color":"#7b7c64","detail":"Server foundations"},
+  {"name":"Firebase","mark":"firebase","color":"#c5993d","detail":"Connected app services"},
+  {"name":"Azure","mark":"azure","color":"#5c8da5","detail":"Cloud services"},
+  {"name":"TypeScript","mark":"typescript","color":"#567f9e","detail":"Clearer contracts"},
+  {"name":"Tailwind","mark":"tailwind","color":"#5e9da5","detail":"Consistent styling"},
+  {"name":"CI / CD","mark":"cicd","color":"#6c9664","detail":"Considered releases"},
+  {"name":"Grafana","mark":"grafana","color":"#c28652","detail":"Useful observability"}
+]

@@ -1,0 +1,34 @@
+{
+  "name": "jordan-shumate-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev --host 0.0.0.0 --port 4173",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare",
+    "preview": "nuxt preview --host 0.0.0.0 --port 4173",
+    "offline": "node scripts/build-offline.mjs",
+    "check": "nuxt typecheck",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "nuxt": "4.6.2",
+    "vue": "3.5.44",
+    "nodemailer": "^7.0.0",
+    "h3": "^1.15.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vite": "^7.0.0",
+    "typescript": "^5.9.0",
+    "vue-tsc": "^3.0.0",
+    "@types/nodemailer": "^7.0.0",
+    "@types/node": "^24.0.0"
+  }
+}

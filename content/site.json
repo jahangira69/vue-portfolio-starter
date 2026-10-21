@@ -1,0 +1,76 @@
+{
+  "name": "Jordan Shumate",
+  "initials": "JS",
+  "role": "Independent software engineer",
+  "location": "United States",
+  "intro": "Thoughtful interfaces. Reliable engineering. Digital experiences that feel a little more human.",
+  "about": "I’m Jordan, an independent software engineer based in the United States. This is a space for the things I build, the problems I explore, and the thinking behind the work.",
+  "aboutSecondary": "I’m drawn to the intersection of useful technology and thoughtful design. From the first interaction to the last line of code, every detail has a job to do.",
+  "email": "",
+  "githubUrl": "",
+  "linkedinUrl": "",
+  "resumeUrl": "",
+  "contactMode": "email",
+  "contactEndpoint": "/api/contact",
+  "demoContent": true,
+  "skills": [
+    {
+      "label": "Interface engineering",
+      "number": "01",
+      "description": "Clear, accessible interfaces that feel natural on every screen.",
+      "items": [
+        "Vue.js",
+        "Nuxt",
+        "TypeScript",
+        "JavaScript",
+        "HTML & CSS"
+      ]
+    },
+    {
+      "label": "Systems & integration",
+      "number": "02",
+      "description": "Thoughtful architecture that connects the dots behind the experience.",
+      "items": [
+        "Node.js",
+        "REST APIs",
+        "PostgreSQL",
+        "Data modeling",
+        "Testing"
+      ]
+    },
+    {
+      "label": "Craft & delivery",
+      "number": "03",
+      "description": "Small details, considered interactions, and a dependable path to launch.",
+      "items": [
+        "Accessibility",
+        "Performance",
+        "Git",
+        "Responsive design",
+        "CI / CD"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "period": "CURRENT",
+      "title": "Independent software engineer",
+      "company": "Independent · United States",
+      "description": "Building an independent practice around software engineering. Detailed responsibilities, dates, and delivered work will be added with Jordan’s verified career information.",
+      "verified": true
+    },
+    {
+      "period": "YOUR JOURNEY",
+      "title": "Experience worth sharing",
+      "company": "Career details coming soon",
+      "description": "A place for previous roles, meaningful collaborations, and the work behind them. This preview entry will be replaced with confirmed professional experience.",
+      "verified": false
+    }
+  ],
+  "principles": [
+    "Make it useful.",
+    "Keep it clear.",
+    "Care about the details."
+  ],
+  "xUrl": ""
+}
